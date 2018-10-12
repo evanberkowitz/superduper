@@ -1,5 +1,5 @@
 TEX=pdflatex -halt-on-error
-BIB=bibtex
+BIB=bibtex -min-crossrefs=999
 GIT_STATUS=git_information.tex
 
 MASTER=master
