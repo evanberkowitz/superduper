@@ -8,7 +8,7 @@ git stash push --keep-index --include-untracked --message $STASH_NAME
 echo "Making based on latest commit..."
 
 pushd "$(git rev-parse --show-toplevel)" > /dev/null
-make master.pdf > "$LOG"
+make super.pdf > "$LOG"
 RESULT=$?
 popd > /dev/null
 
@@ -20,7 +20,7 @@ fi
 
 if [[ $RESULT -ne 0 ]]; then
     echo "failed."
-    echo "Please ensure \`make master.pdf\` succeeds before committing."
+    echo "Please ensure \`make super.pdf\` succeeds before committing."
     echo "See $LOG for more details"
     echo "The last $N lines of the log are:"
     tail -n $N "$LOG"

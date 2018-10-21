@@ -2,7 +2,7 @@ TEX=pdflatex -halt-on-error
 BIB=bibtex -min-crossrefs=999
 GIT_STATUS=git_information.tex
 
-MASTER=master
+MASTER=super
 TARGET?=$(MASTER)
 SECTIONS = $(shell ls -1 section/ | sed -e 's/^/section\//g')
 
