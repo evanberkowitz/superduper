@@ -12,7 +12,7 @@ endif
 
 all: $(MASTER).pdf
 
-%.pdf: $(SECTIONS) macros.tex %.tex
+%.pdf: $(SECTIONS) macros.tex %.tex super.bib
 	@echo $@
 	make $(GIT_STATUS) $(REDIRECT)
 	$(TEX) -jobname=$* $*.tex $(REDIRECT)
