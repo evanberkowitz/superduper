@@ -21,6 +21,15 @@ all: $(MASTER).pdf
 	$(TEX) -jobname=$* $*.tex $(REDIRECT)
 	make tidy
 
+arXiv:
+	$(TEX) -jobname=super super.tex $(REDIRECT)
+	-$(BIB) super $(REDIRECT)
+	$(TEX) -jobname=super super.tex $(REDIRECT)
+	$(TEX) -jobname=super super.tex $(REDIRECT)
+	tar -cvzf super.tar.gz super.tex macros.tex super.bbl section/*
+	make tidy
+	
+
 .PHONY: $(GIT_STATUS)
 $(GIT_STATUS): 
 ifdef DRAFT
