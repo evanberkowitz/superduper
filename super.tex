@@ -18,15 +18,15 @@
 %%%     Draft margin.
 %%%
 
-\usepackage[
-    angle=90,
-    color=black,
-    opacity=1,
-    scale=2,
-    ]{background}
-\SetBgPosition{current page.west}
-\SetBgVshift{-4.5mm}
-\backgroundsetup{contents={\input{git_information}}}
+% \usepackage[
+%     angle=90,
+%     color=black,
+%     opacity=1,
+%     scale=2,
+%     ]{background}
+% \SetBgPosition{current page.west}
+% \SetBgVshift{-4.5mm}
+% \backgroundsetup{contents={\input{git_information}}}
 
 \input{macros} % input rather than include so we don't create macros.aux
 
@@ -39,9 +39,23 @@
 
 \title{Superfluous Physics}
 
-\author{Evan Berkowitz}
-\author{William Donnelly}
-\author{Sylvia Zhu}
+\author{Evan Berkowitz}		\email{e.berkowitz@fz-juelich.de}
+							\affiliation{    
+	Institut f\"{u}r Kernphysik and Institute for Advanced Simulation,
+    Forschungszentrum J\"{u}lich, 54245 J\"{u}lich Germany
+}
+\author{William Donnelly}	\email{wdonnelly@perimeterinstitute.ca}
+							\affiliation{
+	Perimeter Institute for Theoretical Physics, 
+	31 Caroline St. N. Waterloo, ON N2L 2Y5, Canada
+}
+\author{Sylvia Zhu}			\email{sylvia.zhu@aei.mpg.de}
+							\affiliation{
+	Max Planck Institute for Gravitational Physics (Albert Einstein Institute),
+	Callinstra{\ss}e 38, 30167 Hannover Germany
+}							\affiliation{
+	Leibniz Universit\"{a}t Hannover, D-30167 Hannover, Germany
+}
 
 \date{\today}
 
@@ -56,7 +70,7 @@
 \input{section/supergroups}
 \input{section/supersaturation}
 \input{section/acknowledgements}
-\input{section/super}
+% \input{section/super}
 
 \bibliography{super}
 
